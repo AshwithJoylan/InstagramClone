@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:id="@+id/rlLayout1"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Are you sure youo want to sign out?"
+            android:id="@+id/tvLayout"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Sign out"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/btnConfirmSignOut"
+            android:background="@drawable/white_rounded_button"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/rlLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:id="@+id/SinoutProgress">
+    <ProgressBar
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ConfirmProgressBar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signing out..."
+       android:layout_gravity="center_horizontal"
+        />
+    </LinearLayout>
+</RelativeLayout>

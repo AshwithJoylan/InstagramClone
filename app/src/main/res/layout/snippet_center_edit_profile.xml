@@ -1,0 +1,221 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/civProfileImage"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_marginTop="20dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Photo"
+                android:id="@+id/tvchaneProfilePhotoText"
+                android:textSize="16dp"
+                android:layout_below="@+id/civProfileImage"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/blue" />
+
+            <!-- user name-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tvchaneProfilePhotoText"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/wite_grey_border_top"
+                android:id="@+id/rlLayout1">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_user_name"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:hint="User Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEditUserName"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    android:inputType="textNoSuggestions"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="20dp" />
+            </RelativeLayout>
+
+            <!--display name-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/rlLayout1"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/wite_grey_border_top"
+                android:id="@+id/rlLayout2">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_display_name"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:hint="Dislpay Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEditDisplayName"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    android:inputType="textNoSuggestions"
+                    android:layout_marginLeft="40dp"
+                     android:layout_marginRight="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/rlLayout2"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/wite_grey_border_top"
+                android:id="@+id/rlLayout3">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_web"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:hint="Website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEditWebsite"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    android:inputType="textNoSuggestions"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/rlLayout3"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/wite_grey_border_top"
+                android:id="@+id/rlLayou4">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_description"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:hint="Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEditDescription"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    android:inputType="textNoSuggestions"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="20dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:id="@+id/tvPrivateInfo"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/rlLayou4"
+                android:text="PRIVATE INFORMATION"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/wite_grey_border_top"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tvPrivateInfo"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/wite_grey_border_top"
+                android:id="@+id/rlLayou5">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_email"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:hint="Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etEditEmail2"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    android:inputType="textNoSuggestions"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/rlLayou5"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/wite_grey_border_top"
+                android:id="@+id/rlLayout6">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_phone"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:hint="PhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etPhoneNumber"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="40dp"
+                    android:background="@null"
+                    android:layout_centerVertical="true"
+                    android:inputType="textNoSuggestions"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="20dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</merge>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">InstagramClone</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="log_out">Log Out</string>
+    <string name="error_length_password">Password too short!</string>
+    <string name="auth_failed">Authentication failed! check your email and password</string>
+
+    <!--firebase Database Fiels-->
+    <string name="dbname_users">users</string>
+    <string name="dbname_settings">user_account_settings</string>
+    <string name="user_account_settings">user_account_settings</string>
+    <string name="user_collection">users</string>
+    <string name="database_users_field">users</string>
+    <string name="databasse_user_name">user_name</string>
+</resources>
